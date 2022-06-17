@@ -1,14 +1,10 @@
-#following cases are outside of the scope of the current exercise:
-#-Provide any intermediate scores-it only has the final scores
 import re
 import sys
 
 print("""
     This is a bowling exercise. Please enter scores by frame.Use comma( , )
-    to separate each frame.
-    Each game has no more than 21 inputs.Each input must be
-    positive and no greater than 10. We will calculate
-    final score at the end. Enjoy!
+    to separate each frame.Each game has no more than 21 inputs.Each input must be
+    positive and no greater than 10. We will calculate final score at the end. Enjoy!
 
     Input example:'23,5/,78,0/, X, X,7/,90,88,X, XX' will return:
     [2,3,5,5,7,8,0,10,10,10,7,3,9,0,8,8,10,10,10].
@@ -18,10 +14,7 @@ print("""
     If you roll a spare in the first two shots of the 10th frame, you get 1 more shot.
     If you leave the 10th frame open after two shots, the game is over and you do not get an additional shot.
 """)
-
-#inputs=input("Please input score(0-9) by frame one by one seperated by space(no more than 21 inputs,X means strike,/ means a spare): ")
 throws=[]
-#print(inputs)
 
 def total_score(input):
     """
